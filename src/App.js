@@ -47,19 +47,32 @@ function App() {
         
         
         
-        <input type="text" onChange={(e => setSearchText(e.target.value))}></input>
-        <button onClick={e => searchForPlayer(e)}>Search for player</button> 
+        
+
+        
+         <input type="text" id='Search' onChange={(e => setSearchText(e.target.value))}></input>
+         <p></p>
+          <button onClick={e => searchForPlayer(e)}>Search for player</button> 
+        
+        
       </div>
 
         {
         //if we have a valid object, continue
         JSON.stringify(playerData) !='{}' ? 
         <>  
-         <p>{playerData.name}</p>
-         <p>Summoner Level {playerData.summonerLevel}</p>
+         <p className='SummonerName'>
+         <img width="100" height="100" id="profileIcon" src={"http://ddragon.leagueoflegends.com/cdn/12.18.1/img/profileicon/"+playerData.profileIconId+".png"}></img>
+          <br></br>
+          {playerData.name}
+        </p>
+         <p className='SummonerLevel'>
+          Summoner Level {playerData.summonerLevel}
+          
+          </p>
         </>
         :
-        <><p> No player data.</p></>
+        <><p></p></>
         
         }
       

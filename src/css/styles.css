@@ -2,6 +2,17 @@ img {
     max-width:100%;
 }
 
+
+input[type="text"]:focus{
+    color:#000 !important;
+}
+
+button{
+    color:#000;
+    color-scheme: green;
+
+}
+
 body {
     animation: slidein 3s;
     background-image: url('https://wallpaperaccess.com/full/340434.png');
@@ -14,7 +25,7 @@ body {
 
 }
 
-.App {
+.title {
     
     font-family: "Skygraze", "Courier New", monospace;
     font-size: 50px;
@@ -35,6 +46,11 @@ body {
     src: url('./fonts/Skygraze.otf');
 }
 
+@font-face{
+    font-family: Rosterine;
+    src: url('./fonts/Rosterine.otf');
+}
+
 
 
 @keyframes slidein {
@@ -49,33 +65,37 @@ body {
     }
 }
 
+.SummonerName{
+    text-align: center;
+    font-family: Rosterine;
+    font-size: 400%;
+    
+}
+
+.SummonerLevel {
+    text-align: center;
+    font-family: Rosterine;
+    font-size: 200%;
+    font-weight: 300;
+}
 
 
-button::before {  
-    transform: scaleX(0);
-    transform-origin: bottom right;
-  }
-  
-  button:hover::before {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  
-  button::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    inset: 0 0 0 0;
-    background: rgb(255, 0, 43);
-    z-index: -1;
-    transition: transform .3s ease;
-  }
-  
-  button {
-    position: relative;
-    font-size: 5rem;
-  }
+input, select, textarea{
+    color:#2389;
+    font-family: Rosterine;
+    font-size: larger;
+}
+
+button {
+    color:rgb(5, 5, 82);
+    font-family: Rosterine;
+    font-size:larger;
+}
+.Search {
+    
+    
+    
+}
   
   html {
     block-size: 100%;
