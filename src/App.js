@@ -45,11 +45,6 @@ function App() {
          <h3>RIOT Player Searcher</h3>
         </div>
         
-        
-        
-        
-
-        
          <input type="text" id='Search' onChange={(e => setSearchText(e.target.value))}></input>
          <p></p>
           <button onClick={e => searchForPlayer(e)}>Search for player</button> 
