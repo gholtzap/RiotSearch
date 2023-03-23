@@ -1,9 +1,5 @@
-import logo from './logo.svg';
 import React, { useState } from "react";
-import background from "./img/bg.jpg"
 import axios from 'axios';
-
-
 import './css/App.css';
 import "./css/styles.css"
 
